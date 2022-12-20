@@ -1,4 +1,4 @@
 <?php
-$conexion= new mysqli("localhost","root","Micasita123","lmvtest");
+$conexion= new mysqli("lemavii.com.ar","usuarios","seisneuronas","users");
 $conexion->set_charset("utf8");
 ?>

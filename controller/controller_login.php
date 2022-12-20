@@ -14,7 +14,6 @@ if(!empty($_POST["btnin"])){
         
     } else {
         echo "introducir campos";
-    }
-    
+    }    
 }
 ?>
