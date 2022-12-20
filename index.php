@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(empty($_SESSION["nombre"])){
+    header("location: pagestart.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>LEMAVII INICIO</title>
+        <title>LEMAVII</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -17,9 +23,9 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- Navigation-->
+        <!-- Navigation-->         
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
+            <div class="container">              
                 <a class="navbar-brand" href="#page-top"><img src="assets/img/logos/lemaviicono.svg" alt="..."  /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -311,7 +317,7 @@
             </div>
         </div>
         <!-- Contacto-->
-        <section class="page-section" id="contact">
+        <section class="page-section" id="contacto">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">CONTACTENOS</h2>

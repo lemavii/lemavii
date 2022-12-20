@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/victo/Downloads/LMV-main/index.html",
+            "url": "file:///C:/Users/victo/Downloads/LMV-main/pagestart.php",
             "webRoot": "${workspaceFolder}"
         }
     ]
