@@ -24,8 +24,16 @@ if(empty($_SESSION["nombre"])){
     </head>
     <body id="page-top">
         <!-- Navigation-->         
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">              
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="av" >
+        <div>          
+                <?php 
+                echo $_SESSION["nombre"];
+                ?>
+            </div>
+        </nav>     
+     
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">        
+            <div class="container">  
                 <a class="navbar-brand" href="#page-top"><img src="assets/img/logos/lemaviicono.svg" alt="..."  /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -38,6 +46,7 @@ if(empty($_SESSION["nombre"])){
                         <li class="nav-item"><a class="nav-link" href="#about">Empresa</a></li>
                         <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="controller/close_session.php">Salir</a></li>
                     </ul>
                 </div>
             </div>
