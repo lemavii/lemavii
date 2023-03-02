@@ -22,6 +22,7 @@ function clearString($innerString){
     $innerString=str_ireplace("[", "", $innerString);
     $innerString=str_ireplace("]", "", $innerString);
     $innerString=str_ireplace("==", "", $innerString);
+    $innerString=str_ireplace("=", "", $innerString);
     $innerString=str_ireplace(";", "", $innerString);
     $innerString=str_ireplace("::", "", $innerString);
     $innerString=trim($innerString);
