@@ -17,7 +17,7 @@
                 include "controller/controller_login.php";
             ?>
             <div class="input-user">
-                <input type ="text" name ="user"placeholder="Usuario">
+                <input type ="text" name ="user" placeholder="Usuario">
             </div>
             <br>
             <div class="inputs-pass">
