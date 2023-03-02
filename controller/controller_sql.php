@@ -1,2 +1,2 @@
 $serverName ="localhost"
-$connectionInfo= array("Database"=>"prueba_usuarios")
+$connectionInfo= array("Database"=>"lemaviic_")
