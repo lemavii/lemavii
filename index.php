@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(empty($_SESSION["nombre"])){
+if(empty($_SESSION["user"])){
     header("location: pagestart.php");
 }
 ?>
