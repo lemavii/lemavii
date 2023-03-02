@@ -20,7 +20,7 @@ if(!empty($_POST["btnin"])){
         }
         
             } catch (\Exception $e) {
-           echo "Recargar la pagina o contactar con tecnico@lemavii.com.ar";
+           echo "<div class='alert alert-danger'>Recargar la pagina o contactar con tecnico@lemavii.com.aracceso denegado</div>";
         }
       
 
