@@ -26,10 +26,7 @@
             <br>
             <input name="btnin" class = "btn" type="submit" value="iniciarsesion">
         </form>
-    </div>
-    <div>
         <a href="./indix2.html">Ir a la pagina 3djs</a>
     </div>
-
 </body>
 </html>
