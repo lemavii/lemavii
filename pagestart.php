@@ -29,6 +29,7 @@
         <a href="./indix2.html">Ir a la pagina 3djs</a>
     </div>
     <canvas id="canvas" width="500" height="500"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', () => {
     // Obtiene el lienzo (canvas)
