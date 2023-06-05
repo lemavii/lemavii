@@ -29,7 +29,7 @@
         <a href="./indix2.html">Ir a la pagina 3djs</a>
     </div>
     <canvas id="canvas" width="500" height="500"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-    <script src="./js/cubo.js"></script>    
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script-->
+    <script src="./js/cubo.js" type="module"></script>    
 </body>
 </html>

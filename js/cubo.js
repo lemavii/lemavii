@@ -1,3 +1,5 @@
+import * as THREE from './node_modules/three/build/three.module.js'
+
 window.addEventListener('DOMContentLoaded', () => {
     // Obtiene el lienzo (canvas)
     const canvas = document.getElementById('canvas');
