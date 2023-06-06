@@ -1,41 +1,40 @@
 import * as THREE from "../node_modules/three/build/three.module.js"
+import {GLTFLoader} from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js'
 
-window.addEventListener('DOMContentLoaded', () => {
-    // Obtiene el lienzo (canvas)
-    const canvas = document.getElementById('canvas');
-  
-    // Configura la escena
-    const scene = new THREE.Scene();
-  
-    // Configura la cámara
-    const camera = new THREE.PerspectiveCamera(75, canvas.width / canvas.height, 0.1, 1000);
-    camera.position.z = 5;
-  
-    // Configura el renderizador
-    const renderer = new THREE.WebGLRenderer({ canvas });
-    renderer.setSize(canvas.width, canvas.height);
-  
-    // Crea un cubo
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    const cube = new THREE.Mesh(geometry, material);
-  
-    // Ajusta la escala del cubo en relación con el tamaño del lienzo
-    const canvasAspectRatio = canvas.width / canvas.height;
-    const scaleFactor = 2; // Define el factor de escala deseado
-    cube.scale.set(canvasAspectRatio * scaleFactor, 1 * scaleFactor, 1 * scaleFactor);
-  
-    // Agrega el cubo a la escena
-    scene.add(cube);
-  
-    // Renderiza la escena
-    function animate() {
-      requestAnimationFrame(animate);
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
-      renderer.render(scene, camera);
-    }
-  
-    animate();
-  });
-  
+const canvas = document.querySelector('.canvas');
+const scene = new THREE.Scene();
+
+const loader = new GLTFLoader();
+loader.load('assets/scene.gltf',function(gltf){
+    console.log(gltf)
+}, function(xhr){
+    console.log((xhr.loaded/xhr.total*100)+"%loaded")
+}, function(error){
+    console.log('errordecarga')
+});
+
+
+const geometry = new THREE.BoxGeometry(1,1,1);
+const material = new THREE.MeshBasicMaterial({color:0x00ff00});
+const boxMesh= new THREE.Mesh(geometry,material);
+scene.add(boxMesh);
+
+const sizes={
+    width:window.innerWidth,
+    height:window.innerHeight
+};
+
+const camera = new THREE.PerspectiveCamera(75, sizes.width/sizes.height,0.1,100);
+camera.position.set(0,1,2);
+scene.add(camera);
+
+const renderer = new THREE.WebGLRenderer({
+    canvas:canvas
+});
+
+renderer.setSize(sizes.width,sizes.height);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+renderer.shadowMap.enabled = true;
+renderer.gammaOutput = true;
+renderer.render(scene,camera);
+
