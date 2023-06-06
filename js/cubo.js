@@ -1,4 +1,4 @@
-import * as THREE from '../node_modules/three/build/three.cjs'
+import * as THREE from "../node_modules/three/build/three.cjs"
 
 window.addEventListener('DOMContentLoaded', () => {
     // Obtiene el lienzo (canvas)

@@ -30,6 +30,6 @@
     </div>
     <canvas id="canvas" width="500" height="500"></canvas>
     <!--script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script-->
-    <script src="./js/cubo.js" type="module"></script>    
+    <script type="module" src="./js/cubo.js" ></script>    
 </body>
 </html>
