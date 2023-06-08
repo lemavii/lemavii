@@ -1,5 +1,5 @@
-import * as THREE from 'three';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'
+import * as THREE from './node_modules/three/build/three.module.js'
+import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js'
 
 const canvas = document.querySelector('#webgl');
 const renderer = new THREE.WebGLRenderer({canvas:canvas,antialias:true});
