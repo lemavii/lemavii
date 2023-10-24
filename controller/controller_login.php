@@ -16,7 +16,7 @@ if(!empty($_POST["btnin"])){
             $_SESSION["nombre"]=$data->user;
             header("location:index.php");
         } else {
-            echo "<div class='alert alert-danger'>acceso denegado</div>";
+            echo'<h3 class="cartelDenegado">Acceso denegado</h3>';
         }
         
             } catch (\Exception $e) {
@@ -25,7 +25,7 @@ if(!empty($_POST["btnin"])){
       
 
     } else {
-        echo "introducir campos";
+        echo '<h3 class="cartelDenegado">Indroducir campos</h3>';
     }
 }
 ?>

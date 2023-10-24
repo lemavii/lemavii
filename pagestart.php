@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
     <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
 </head>
 <body>
-
-    <div class="login-content">
-        <form action="" method="POST">
-            <img  src="assets/img/logos/lemaviicono.svg">            
-            <br>     
-            <?php
+    <?php
                 include  "models/connection.php";
                 include "controller/controller_login.php";
-            ?>
-            <div class="input-user">
-                <input type ="text" name ="user" placeholder="Usuario">
+    ?>
+    <div class="main">
+        <!--///////////////////////////////////////////////////////////////////////////////-->
+        <div class="encuadre">       
+            <div class="header">
+                <img class="header__img" src="./assets/img/logos/lemaviicono.svg" alt="logolemavii">
             </div>
-            <br>
-            <div class="inputs-pass">
-                <input type="password" name = "pass" placeholder="contraseña">
-            </div>                        
-            <br>
-            <input name="btnin" class = "btn" type="submit" value="iniciarsesion">
-        </form>
-        <a href="./indix2.html">Ir a la pagina 3djs</a>
+            <!--///////////////////////////////////////////////////////////////////////////////-->
+            <div class="login">
+                <form class="login__form" action="" method="POST">
+                <div class="login__input">
+                    <input type ="text" name ="user" placeholder="Usuario">
+                </div>
+
+                <div class="login__input">
+                    <input type="password" name = "pass" placeholder="contraseña">
+                </div>   
+                <input id="mi-label" name="btnin" class = "login_btn" type="submit" value="Iniciar Sesión">
+                </form>
+            </div>
+        </div>
+        <canvas id="myCanvass" style="background-color=transparent"></canvas>
     </div>
-    <canvas class="canvas" id="canvas" width="500" height="500"></canvas>
+    <div id="particles-js">
+    </div>
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+    
+    <!--///////////////////////////////////////////////////////////////////////////////-->
+    <script type="importmap">
+			{
+				"imports": {
+					"three": "./node_modules/three/build/three.module.js",
+					"three/addons/": "./node_modules/three/examples/jsm/"
+				}
+			}
+	</script>
     <!--script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script-->
-    <script type="module" src="js/three.js" ></script>    
+    <script type="module" src="js/cabezon.js" ></script>    
+    <script  src="js/particles.min.js" ></script>
+    
+    <script  src="js/particles.config.js" ></script>
+
+
 </body>
 </html>
