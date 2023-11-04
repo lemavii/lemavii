@@ -52,10 +52,12 @@ function init() {
 
 
     // load 3d model from our dir
-    var loader = new GLTFLoader().setPath( 'models/gltf/DamagedHelmet/glTF/' );
+    /*var loader = new GLTFLoader().setPath( 'models/gltf/DamagedHelmet/glTF/' );
 
-    loader.load('DamagedHelmet.gltf', handle_load);
+    loader.load('DamagedHelmet.gltf', handle_load);*/
+    var loader = new GLTFLoader().setPath( 'models/gltf/Perfilador/' );
 
+    loader.load('PERFILADOR.gltf', handle_load);
     var mesh;
 
     function handle_load(gltf) {
