@@ -45,7 +45,7 @@ function init() {
     scene.add(light);
     scene.add(light);
 
-    var light2 = new THREE.PointLight(0xff0000, 0.8);
+    var light2 = new THREE.PointLight(0xffffff, 0.8);
     scene.add(light2);
 
 
