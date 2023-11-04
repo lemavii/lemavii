@@ -40,7 +40,7 @@ function init() {
     controls.autoRotateSpeed = 2.0;
     controls.minPolarAngle = Math.PI / 4; // Ángulo mínimo
     controls.maxPolarAngle = Math.PI / 2; // Ángulo máximo
-    controls.enableZoom = true;
+    controls.enableZoom = false;
     //LIGHTS
     var light = new THREE.PointLight(0xffffff, 1, 100);
     light.position.set(5, 5, 5);
@@ -52,14 +52,12 @@ function init() {
 
 
     // load 3d model from our dir
-    /*var loader = new GLTFLoader().setPath( 'models/gltf/DamagedHelmet/glTF/' );
+    var loader = new GLTFLoader().setPath( 'models/gltf/DamagedHelmet/glTF/' );
 
-    loader.load('DamagedHelmet.gltf', handle_load);*/
-    var loader = new GLTFLoader().setPath( 'models/gltf/Perfilador/' );
-    var model = loeader.scene;
-    model.scale.set(0.5,0.5,0.5);
-    loader.load('PERFILADOR.gltf', handle_load);
+    loader.load('DamagedHelmet.gltf', handle_load);
+
     var mesh;
+
     function handle_load(gltf) {
         mesh = gltf.scene;
 
