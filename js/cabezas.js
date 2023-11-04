@@ -38,8 +38,6 @@ function init() {
     controls = new OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
     controls.autoRotateSpeed = 2.0;
-    controls.minPolarAngle = Math.PI / 4; // Ángulo mínimo
-    controls.maxPolarAngle = Math.PI / 2; // Ángulo máximo
     controls.enableZoom = true;
     //LIGHTS
     var light = new THREE.PointLight(0xffffff, 1, 100);
