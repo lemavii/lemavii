@@ -36,7 +36,7 @@ function init() {
 
     // for use viewport control this help us to control object by mouse
     controls = new OrbitControls(camera, renderer.domElement);
-    controls.autoRotate = true;
+    
     controls.autoRotateSpeed = 2.0;
     controls.enableZoom = true;
     //LIGHTS
