@@ -54,9 +54,8 @@ function init() {
 
     loader.load('DamagedHelmet.gltf', handle_load);*/
     var loader = new GLTFLoader().setPath( 'models/gltf/Perfilador/' );
-    var model = loeader.scene;
-    model.scale.set(0.5,0.5,0.5);
-    loader.load('PERFILADOR.gltf', handle_load);
+
+    loader.load('perfiladormini.gltf', handle_load);
     var mesh;
     function handle_load(gltf) {
         mesh = gltf.scene;
