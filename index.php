@@ -22,19 +22,19 @@ if (empty($_SESSION["nombre"])) {
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container px-5 ">
-                <a class="navbar-brand" href="index.html"><img src="assets/img/logos/logo1.svg" alt="Lemavii" class="tlogopers" /></a>
+                <a class="navbar-brand" href="index.php"><img src="assets/img/logos/logo1.svg" alt="Lemavii" class="tlogopers" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link  mx-5" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link  mx-5" href="index.php">Inicio</a></li>
 
-                        <li class="nav-item"><a class="nav-link  mx-5" href="contact.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link  mx-5" href="contacto.php">Contacto</a></li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle  mx-5" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                                <li><a class="dropdown-item" href="#">Producto1</a></li>
+                                <li><a class="dropdown-item" href="#">Producto2</a></li>
 
                             </ul>
                         </li>
@@ -74,6 +74,7 @@ if (empty($_SESSION["nombre"])) {
                     <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
                 </div>
             </div>
+            <a class="position-absolute bottom-0 start-0 text-white px-3 py-2" href="https://www.freepik.es/foto-gratis/campos-parques-eolicos_20082580.htm#fromView=search&page=1&position=0&uuid=db96bda4-a6d4-40f7-ada4-9882c789c58a">Imagen de freepik</a>
         </header>
         <!-- Features section-->
         <section class="py-5" id="features">
@@ -201,6 +202,7 @@ if (empty($_SESSION["nombre"])) {
             </div>
         </div>
     </footer>
+    
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
