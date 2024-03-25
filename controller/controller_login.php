@@ -10,7 +10,7 @@ if(!empty($_POST["btnin"])){
         $user=clearString($user);
         $pass=clearString($pass);
         try {
-             $sql=$conexion->query("select * from lemaviic_.users where user='$user' and password='$pass'");
+             $sql=$conexion->query("select * from lemaviic_lemaviibd.users where user='$user' and password='$pass'");
              
         if ($data=$sql->fetch_object()) {
             $_SESSION["nombre"]=$data->user;

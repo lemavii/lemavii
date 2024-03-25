@@ -1,4 +1,4 @@
 <?php
-$conexion= new mysqli("lemavii.com.ar:3306","adminvic","seisneuronas","lemaviic_");
+$conexion= new mysqli("localhost:3306","root","ki8co8li6y","lemaviic_LemaviiBD");
 $conexion->set_charset("utf8");
 ?>
